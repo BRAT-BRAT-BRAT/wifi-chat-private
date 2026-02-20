@@ -7,7 +7,7 @@ app.config['SECRET_KEY'] = 'wifi-chat-2026!'
 socketio = SocketIO(app, cors_allowed_origins="*", async_mode=None)
 
 # 🔒 CHANGE THIS TO YOUR WIFI (Step 2)
-ALLOWED_IPS = ['192.168.56.1']  # WiFi only!
+ALLOWED_IPS = ['192.168.1.36']  # WiFi only!
 
 def is_wifi_client():
     client_ip = request.remote_addr.split(',')[0].strip()
